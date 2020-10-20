@@ -1,18 +1,18 @@
 [user]
-  email = sunny@sunfox.org
-  name = Sunny Ripert
+  email = leamousel51@gmail.com
+	name = lea mousel
 
 [github]
-  user = sunny
+  user = leamou51
 
-[ghi]
-  token = !security find-internet-password -a sunny -s github.com -l 'ghi token' -w
+#[ghi]
+  #token = !security find-internet-password -a sunny -s github.com -l 'ghi token' -w
 
 [core]
   pager = less -FRSX
 
   # Default editor. Use `subl -n -w` for Sublime Text.
-  editor = vim
+  editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
 
   # Autoconvert line endings from CRLF (Windows) to LF (everybody else)
   autocrlf = input

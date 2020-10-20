@@ -12,8 +12,8 @@
   pager = less -FRSX
 
   # Default editor. Use `subl -n -w` for Sublime Text.
-	editor = subl -n -w  >/dev/null 2>&1
-
+  # editor = vim
+  
   # Autoconvert line endings from CRLF (Windows) to LF (everybody else)
   autocrlf = input
 

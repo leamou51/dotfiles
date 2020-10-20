@@ -15,6 +15,7 @@ plugins=(
   rbenv
   last-working-dir
   common-aliases
+  sublime
   zsh-syntax-highlighting
   history-substring-search
 )

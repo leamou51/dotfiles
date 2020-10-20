@@ -2,7 +2,7 @@ ZSH="$HOME/.oh-my-zsh"
 
 # You can change the theme with another one:
 #   https://github.com/robbyrussell/oh-my-zsh/wiki/themes
-ZSH_THEME="fishy"
+ZSH_THEME="robbyrussell"
 
 # Skip the verification of insecure directories.
 ZSH_DISABLE_COMPFIX="true"

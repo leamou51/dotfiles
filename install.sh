@@ -70,7 +70,7 @@ link vscode-settings.json "$HOME/Library/Application Support/Code/User/settings.
 copy .config/git/template/HEAD
 copy .zshlocal
 
-setopt nocasematch
+#setopt nocasematch
 if [[ ! `uname` =~ "darwin" ]]; then
   git config --global core.editor "subl -n -w $@ >/dev/null 2>&1"
   echo 'export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"' >> zshrc

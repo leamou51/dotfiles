@@ -15,6 +15,7 @@ plugins=(
   rbenv
   last-working-dir
   common-aliases
+  sublime
   zsh-syntax-highlighting
   history-substring-search
 )
@@ -46,7 +47,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # Editor
-export EDITOR=vim
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 
 # Help rmagick find imagemagick 6's pkgconfig on gem install.
 export PKG_CONFIG_PATH=/usr/local/opt/imagemagick@6/lib/pkgconfig

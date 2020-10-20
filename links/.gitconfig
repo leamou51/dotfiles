@@ -25,6 +25,7 @@
 
   # Helps using unicode characters in filenames on file systems like HFS+ on OSX
   precomposeunicode = true
+	editor = subl -n -w  >/dev/null 2>&1
 
 [credential]
   # Use OSX's keychain to remember your passwords

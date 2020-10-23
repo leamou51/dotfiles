@@ -62,13 +62,13 @@ link .tmux.conf
 link .zshrc
 link .hushlogin
 link bin/git-fetch-and-delete
-link bin/gh-rename-master
+# link bin/gh-rename-master
 link .psql/.keep
 link vscode-settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 
 # Copies
-copy .config/git/template/HEAD
-copy .zshlocal
+# copy .config/git/template/HEAD
+# copy .zshlocal
 
 #setopt nocasematch
 if [[ ! `uname` =~ "darwin" ]]; then

@@ -72,6 +72,9 @@ fi
 
 # iTerm2 shell integration.
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+iterm2_print_user_vars() {
+  iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
+}
 
 # Nvm bash completion.
 [ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
@@ -105,4 +108,20 @@ export NVM_DIR="$HOME/.nvm"
 HEROKU_AC_ZSH_SETUP_PATH=/Users/sunny/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
 
 # To link Rubies to Homebrew's OpenSSL 1.1 (which is upgraded)
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+# Mangopay Sandbox
+export GRINGOTTS_TOKEN=leamousel
+export SANDBOX_PASSPHRASE=rcfQbhJ2bdCRP00Kn2ZZ5OanoGd8EBn16ppFMtvtkYYg8TRyw1
+
+export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
+# Repo aliases
+alias client='cd ~/code/kkbb-lendopolis-clients'
+alias front='cd ~/code/kkbb-lendopolis-clients/front'
+alias dash='cd ~/code/kkbb-lendopolis-clients/dashboard'
+alias back='cd ~/code/kkbb-lendopolis'
+alias sgt='cd ~/code/sgt_papers'
+alias gring='cd ~/code/gringotts'
+alias kitten='cd ~/code/kitten'

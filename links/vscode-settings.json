@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorTheme": "One Dark Pro",
     "editor.tabSize": 2,
     "editor.rulers": [
         80
@@ -9,7 +9,7 @@
     "files.trimFinalNewlines": true,
     "explorer.confirmDelete": false,
     "editor.multiCursorModifier": "ctrlCmd",
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "atomKeymap.promptV3Features": true,
     "editor.formatOnPaste": true,
     "telemetry.enableTelemetry": false,
@@ -24,5 +24,7 @@
     },
     "window.zoomLevel": 0,
     "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": false
+    "breadcrumbs.enabled": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "eq-material-theme-icons"
 }

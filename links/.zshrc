@@ -75,20 +75,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
 }
-# iTerms2 badges
-function iterm2_print_user_vars() {
-  iterm2_set_user_var badge $(dir_badges)
-}
-
-function dir_badges() {
-    while read directory badge || [[ -n "$directory" ]]
-    do
-        if [[ "$PWD" == $directory* ]]; then
-            echo $badge
-            break
-        fi
-    done < ~/.badges
-}
 
 # Nvm bash completion.
 [ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"

@@ -42,7 +42,7 @@ install_zsh_plugin() {
   mkdir -p "$ZSH_PLUGINS_DIR" && cd "$ZSH_PLUGINS_DIR"
   if [ ! -d "$ZSH_PLUGINS_DIR/zsh-syntax-highlighting" ]; then
     echo "-----> Installing zsh plugin 'zsh-syntax-highlighting'..."
-    git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
+    git clone git@github.com:zsh-users/zsh-syntax-highlighting.git
   fi
   cd "$CURRENT_DIR"
 }
@@ -64,7 +64,7 @@ link .hushlogin
 link bin/git-fetch-and-delete
 # link bin/gh-rename-master
 link .psql/.keep
-link vscode-settings.json "$HOME/Library/Application Support/Code/User/settings.json"
+# link vscode-settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 
 # Copies
 # copy .config/git/template/HEAD
